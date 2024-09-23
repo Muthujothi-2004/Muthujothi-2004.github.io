@@ -4,138 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./CSS/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.015/dist/typed.umd.js"></script>
 </head>
 
 <body>
-    <section class="container" id="home">
-        <header>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#Contact">Contact</a>
-            </nav>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
 
-        </header>
-        <div class="main">
-            <h4 class="main-top">Hey, I am</h4>
-            <h1 class="main-bottom">MUTHU JOTHI</h1>
-           
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hey, I am</h3>
+            <h1>MUTHU JOTHI</h1>
+            <h3>And I'm <span class="web">Web desinger</span></h3>
+            <div class="home-sec">
+                <a href="https://www.facebook.com/profile.php?id=61566490193634"><i class='bx bxl-facebook'></i></a>
+                <a
+                    href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Muthujothi-2004/Muthujothi-2004.github.io"><i class='bx bxl-github'></i></a>
+                <a href="mailto:muthujothi.muthuraj@fssa.freshworks.com"><i class='bx bxl-gmail'></i></a>
+            </div>
+            <a href="http://127.0.0.1:3000/moreabout.html" class="btn-box">More About Me</a>
         </div>
     </section>
 
-    <!-- page2 -->
-    <section class="container" id="about">
+    <!-- ABOUT -->
+    
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./asstes/image/img15.jpg.jpg" alt="Profile Picture">
+        </div>
+        <div class="about-text">
+            <h4>About <span>Me</span></h4>
+            <h3>Education</h3>
+            <p>Class XII - 2022 - 59% <br> Currently pursuing a B.A. in English at Madras University.</p>
+            <h3>Hobbies</h3>
+            <p>I enjoy listening to music and traveling long distances with friends.</p>
+        </div>
+    </section>
 
-        <main>
-            <div class="detail">
-                <div class="edu">
-                    <h3 class="main-bottom1">Education</h3>
-                    <p class="main-top1">Class XII - 2022 - 59% <br>
-                        pursuing B.A English in Madras University</p>
-
-
-                   
-                        <h3 class="main-bottom1">Hobbies</h3>
-                        <p class="main-top1">Hearing songs and distance travel with friends</p>
-                    
+    <!-- skills -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h1 class="sub-title">My<span>Skills</span></h1>
+            <div class="service-list">
+                <div>
+                    <i class='bx bxl-html5' style="color: darkgreen;"></i>
+                    <a href="http://127.0.0.1:3002/index.html">HTML</a>
 
                 </div>
+
+                <div>
+                    <i class='bx bxs-file-css' style="color: darkgreen;"></i>
+                    <a href="http://127.0.0.1:3002/index.html">CSS</a>
+                </div>
+
+                <div>
+                    <i class='bx bxs-file-js'></i>
+                    <a href="https://github.com/Muthujothi-2004/js-practice/tree/main/02-09-24.js">JS</a>
+                </div>
+
             </div>
 
-            <div class="me">
-                <img src="./asstes/image/img16.jpg.jpg" alt="my-photo"   class="my-pic">
-            </div>
-
-        </main>
+        </div>
     </section>
 
-    <!-- page3 -->
-    <section class="container" id="skills">
+    <!-- contact -->
 
-        <!-- professtional -->
-        <div class=" grid-container">
-            <h1>Professional</h1>
-            <div class="grid-item">
-                <img src="./asstes/image/img.4.jpg" width="100px" height="100px" alt="my-photo1">
-                <h3>HTML</h3>
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's work Together</h4>
+            <div class="contact-list">
+                <li><i class='bx bx-send' style='color:#0f512b'></i>muthujothi24680@gmail.com</li>
+                <li><i class='bx bxs-phone' style='color:#0f512b'></i>9600253462</li>
             </div>
 
-            <div class="grid-item">
-                <img src="./asstes/image/img.2.jpg" width="100px" height="100px" alt="my-photo2">
-                <h3>CSS</h3>
-            </div>
-
-            <div class="grid-item">
-                <img src="./asstes/image/img.7.png" width="100px" height="100x" alt="my-photo3">
-                <h3>JS</h3>
-            </div>
-
-            <div class="grid-item">
-                <img src="./asstes/image/img.1.jpg" width="100px" height="350px" alt="my-photo4">
-                <h3>Canva</h3>
-            </div>
-
-            <div class="grid-item">
-                <img src="./asstes/image/img.5.jpg" width="100px" height="350px" alt="my-photo5">
-                <h3>Inshort</h3>
-            </div>
-
-            <div class="grid-item">
-                <img src="./asstes/image/img.3.jpg" width="100px" height="350px" alt="my-photo6">
-                <h3>Excel</h3>
+            <div class="contact-icons">
+                <a href="https://www.instagram.com/_devil_queen_jo_/reels/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61566490193634"><i class='bx bxl-facebook'></i></i></a>
             </div>
         </div>
 
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
 
+                <input type="" placeholder="Enter Your Subject">
+                <textarea name="" id="" placeholder="Enter Your Massage"></textarea>
+                <input type="submit" value="submit" class="send">
 
-        <div class="grid-container1">
-            <h1>Personal</h1>
+            </form>
 
-            <div class="grid-item1">
-                <img src="./asstes/image/img.9.jpg" width="190x" height="200px" alt="my-photo7" class="img">
-                <h3>Atheletics</h3>
-            </div>
-
-            <div class="grid-item1">
-                <img src="./asstes/image/img.10.jpg" width="190px" height="200px" alt="my-photo8"class="img">
-                <h3>Editing</h3>
-            </div>
-
-            <div class="grid-item1">
-                <img src="./asstes/image/img.8.jpg" width="190px" height="200px" alt="my-photo9"class="img">
-                <h3> Public Speaking </h3>
-            </div>
         </div>
 
     </section>
+ </section>
+ <script src="main.js"></script>
 
-
-
-    <!-- page4 -->
-    <section class="container" id="Contact">
-
-        <main class="grid-main">
-            <div class="grid-item2">
-
-                <P><h5><img src="./asstes/image/img.12jpg" alt="my-photo10" width="100px" height="100px"><a href="https://mail.google.com/mail/u/0/#inbox">muthujothi.muthuraj@fssa.com</a></h5>
-                </P>
-            </div>
-
-            <div class="grid-item2">
-                <p><h5><img src="./asstes/image/img.11jpg.jpg" width="100px" height="100px" alt="my-photo11"> <a href="https://www.linkedin.com/in/muthujothi-m-0a4991326/">muthujothi_muthuraj</a></h5>
-                </p>
-            </div>
-
-            <div class="grid-item2">
-                <p><h5><img src="./asstes/image/img13.jpg.svg" width="100px" height="100px" alt="my-photo12"> <a href="https://www.instagram.com/_devil_queen_jo_/reels/">-devil-queen-jo </a></h5>
-                </p>
-            </div>
-
-        </main>
-    </section>
 </body>
 
 </html>
