@@ -1,8 +1,8 @@
 * {
     padding: 0%;
     margin: 0%;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+    /* box-sizing: border-box;
+    font-family: 'poppins', sans-serif; */
     scroll-behavior: smooth;
 }
 
@@ -52,7 +52,9 @@ body {
 
 }
 
-.navbar a:hover {
+.navbar a:hover,
+a.active
+ {
     color: #DCAE4D;
 }
 
@@ -103,14 +105,12 @@ body {
     margin: 30px 15px 30px 0;
 }
 .home-sec a:hover{
-    background-color:rgb(56, 38, 6);
-    color: black;
-    /* box-shadow:0 0 20px green ; */
+    color: rgb(239, 232, 232);   
 }
 .btn-box{
     display: inline-block;
     padding: 12px 28px;
-    background:rgb(142, 103, 75);
+    background:#DCAE4D;
     border-radius: 40px;
     font-size: 16px;
     color:black;
@@ -118,12 +118,8 @@ body {
     text-decoration: none;
     font-weight: 600px;
 }
-.btn-box:hover{
-    box-shadow: 0 0 5px rgb(209, 180, 159),
-    /* 0 0 25px rgb(142, 103, 75), 0 0 50px rgb(142, 103, 75), */
-     /* 0 0 100px rgb(142, 103, 75),0 0 200px rgb(142, 103, 75) */
 
-}
+
 @keyframes slideRight{
     0%{
         transform: translateX(-100px);
@@ -198,6 +194,9 @@ body {
 
 .about-text h4 span {
     color: #DCAE4D;
+    /* margin-left: 15px; */
+    font-family: 'Georgia', serif;
+    
 }
 
 .about-text h3 {
@@ -234,6 +233,8 @@ body {
 }
 .sub-title span{
     color: #DCAE4D;
+    margin-left: 15px;
+     font-family: 'Georgia', serif;
 }
 .container{
     padding: 90px;
@@ -279,6 +280,21 @@ body {
     margin-bottom: 15px;
     font-family: 'Georgia', serif;
 }
+.submit-button{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 90px;
+}
+.submit-box button{
+    height: 50px;
+    width: 150px;
+    border-radius: 13px;
+    border: none;
+   background-color: #DCAE4D;
+    
+    
+}
 
 /* contact */
 
@@ -286,21 +302,31 @@ body {
     display: grid;
     gap: 3rem;
     padding-left: 20px;
+    padding-left: 500px;
    
 }
 .contact-text h2{
     font-size: 70px;
-    line-height: 1;
     text-align: center;
     color:rgb(80, 125, 80);
     position: relative;
-    top: 75px;
-    font-family: 'Georgia', serif;
+    top:20px;
+   display: flex;
+    font-family: 'Georgia', serif; 
+
     
     
 }
 .contact-text h2 span{
     color: #DCAE4D;
+    margin-left: 15px;
+    font-family: 'Georgia', serif;
+     
+}
+.contact-text{
+    position: relative;
+    top: 80px;
+   
 }
 .contact-text h4{
     margin: 15px 0;
@@ -309,6 +335,7 @@ body {
     font-weight: 600;
     font-family: 'Georgia', serif;
     padding-top: 60px;
+   
 
 }
 
@@ -321,7 +348,8 @@ body {
     color: darkgreen;
     font-size: 30px;
     font-weight: 600;
-        transition: all 40s ease;
+    transition: all 40s ease;
+       
 }
 .contact-list i a:hover{
     transform:scale(1.01) translateY(-5px);
@@ -348,7 +376,6 @@ body {
 .contact-icons i:hover{
   background: darkgreen;
   color: black;
-  box-shadow: 0 0 20px darkgreen;
 }
 .contact-form form{
     position: relative;
@@ -383,8 +410,7 @@ body {
     /* opacity: ; */
     animation: sideTop is ease forwards;
     animation-delay: 2s;
-    box-shadow: 0 0 25px green,
-    /* 0 0 25px green; */
+ 
 }
 
 #skills{
