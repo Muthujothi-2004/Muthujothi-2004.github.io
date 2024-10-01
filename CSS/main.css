@@ -16,30 +16,25 @@ body {
     left: 0;
     width: 100VW;
     padding: 20px 10%;
-    background-color:rgb(80, 125, 80);
+    background-color: rgb(80, 125, 80);
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    
+
 }
 
 .logo {
     position: relative;
     font-size: 25px;
-    color:rgb(246, 240, 238);
+    color: rgb(246, 240, 238);
     text-decoration: none;
     font-family: 'Georgia', serif;
     font-weight: 700px;
-    cursor: default;
-    opacity: 0;
-    animation: slideRight 1s  ease forwards;
-
-
+    animation: slideRight 1s ease forwards;
 }
 
 .navbar a {
-    display: inline-block;
     font-size: 25px;
     color: rgb(241, 238, 237);
     text-decoration: none;
@@ -53,14 +48,13 @@ body {
 }
 
 .navbar a:hover,
-a.active
- {
+a.active {
     color: #DCAE4D;
 }
 
 .home {
     position: relative;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     height: 100vh;
     background: url(../asstes/image/img18.jpg) repeat;
@@ -78,8 +72,8 @@ a.active
 .home-content h3 {
     font-size: 42px;
     font-weight: 700;
-    color:white;
-   
+    color: white;
+
 
 }
 
@@ -87,7 +81,7 @@ a.active
     font-size: 60px;
     font-weight: 700;
     margin: -3px.0;
-    color:white;
+    color: white;
 }
 
 .home-sec a {
@@ -104,53 +98,55 @@ a.active
     text-decoration: none;
     margin: 30px 15px 30px 0;
 }
-.home-sec a:hover{
-    color: rgb(239, 232, 232);   
+
+.home-sec a:hover {
+    color: rgb(239, 232, 232);
 }
-.btn-box{
+
+.btn-box {
     display: inline-block;
     padding: 12px 28px;
-    background:#DCAE4D;
+    background: #DCAE4D;
     border-radius: 40px;
     font-size: 16px;
-    color:black;
+    color: black;
     letter-spacing: 2px;
     text-decoration: none;
     font-weight: 600px;
 }
 
 
-@keyframes slideRight{
-    0%{
+@keyframes slideRight {
+    0% {
         transform: translateX(-100px);
         opacity: 0;
     }
 
-   100%{
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
 
-@keyframes slidTop{
-    0%{
+@keyframes slidTop {
+    0% {
         transform: translateY(100px);
         opacity: 0;
     }
 
-   100%{
+    100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
 
-@keyframes slideLeft{
-    0%{
+@keyframes slideLeft {
+    0% {
         transform: translateX(-100px);
         opacity: 1;
     }
 
-   100%{
+    100% {
         transform: translateX(0px);
         opacity: 1;
     }
@@ -164,8 +160,9 @@ a.active
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
-    padding: 50px; /* Add some padding for better spacing */
-    
+    padding: 50px;
+
+
 }
 
 .about-img {
@@ -175,32 +172,32 @@ a.active
 }
 
 .about-img img {
-    max-width: 400px; /* Adjust size as needed */
+    max-width: 400px;
     height: auto;
-    border-radius: 50%; /* Make image round */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for shadow */
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-img img:hover {
-    transform: scale(1.1); /* Scale up on hover */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .about-text h4 {
-    font-size: 3rem; /* Slightly smaller for better fit */
+    font-size: 3rem;
     color: rgb(80, 125, 80);
-    font-family: 'Georgia', serif; /* Change font style */
+    font-family: 'Georgia', serif;
 }
 
 .about-text h4 span {
     color: #DCAE4D;
     /* margin-left: 15px; */
     font-family: 'Georgia', serif;
-    
+
 }
 
 .about-text h3 {
-    font-size: 2.5rem; /* Adjust size for consistency */
+    font-size: 2.5rem;
     font-weight: 600;
     color: rgb(80, 125, 80);
     line-height: 1.7;
@@ -210,54 +207,61 @@ a.active
 
 .about-text p {
     color: #DCAE4D;
-    font-size: 1.5rem; /* Adjust for better readability */
+    font-size: 1.5rem;
     line-height: 1.2;
     margin-bottom: 1rem;
     max-width: 600px;
     font-family: 'Georgia', serif;
 }
+
 /* skills */
 
-#skills{
-   color:rgb(80, 125, 80);
-   font-size: 20px;
-   line-height: 1.4;
-   margin-bottom: 4rem;
-   
+#skills {
+    color: rgb(80, 125, 80);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+
 }
-.sub-title{
+
+.sub-title {
     text-align: center;
     font-size: 60px;
     padding-bottom: 70px;
     font-family: 'Georgia', serif;
 }
-.sub-title span{
+
+.sub-title span {
     color: #DCAE4D;
     margin-left: 15px;
-     font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif;
 }
-.container{
+
+.container {
     padding: 90px;
 }
-.service-list{
+
+.service-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 
 }
-.service-list div{
+
+.service-list div {
     background: transparent;
     padding: 40px;
     font-size: 15px;
     font-weight: 15px;
     border-right: 10px;
     border-radius: 20px;
-   
+
     box-shadow: 1px 1px 20px darkgreen,
-    1px 1px 40px green;
+        1px 1px 40px green;
 }
-.service-list a{
+
+.service-list a {
     text-decoration: none;
     list-style: none;
     color: darkgreen;
@@ -266,13 +270,15 @@ a.active
     display: flex;
     justify-content: center;
 }
-.service-list div i{
+
+.service-list div i {
     display: flex;
     justify-content: center;
- font-size: 30px;
- margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 30px;
 }
-.service-list h2{
+
+.service-list h2 {
     display: flex;
     justify-content: center;
     font-size: 30px;
@@ -280,82 +286,91 @@ a.active
     margin-bottom: 15px;
     font-family: 'Georgia', serif;
 }
-.submit-button{
+
+.submit-button {
     display: flex;
     justify-content: space-around;
     position: relative;
     top: 90px;
 }
-.submit-box button{
+
+.submit-box button {
     height: 50px;
     width: 150px;
     border-radius: 13px;
     border: none;
-   background-color: #DCAE4D;
-    
-    
+    background-color: #DCAE4D;
+
+
 }
 
 /* contact */
 
-.contact{
+.contact {
     display: grid;
     gap: 3rem;
     padding-left: 20px;
     padding-left: 500px;
-   
+
 }
-.contact-text h2{
+
+.contact-text h2 {
     font-size: 70px;
     text-align: center;
-    color:rgb(80, 125, 80);
+    color: rgb(80, 125, 80);
     position: relative;
-    top:20px;
-   display: flex;
-    font-family: 'Georgia', serif; 
+    top: 20px;
+    display: flex;
+    font-family: 'Georgia', serif;
 
-    
-    
+
+
 }
-.contact-text h2 span{
+
+.contact-text h2 span {
     color: #DCAE4D;
     margin-left: 15px;
     font-family: 'Georgia', serif;
-     
+
 }
-.contact-text{
+
+.contact-text {
     position: relative;
     top: 80px;
-   
+
 }
-.contact-text h4{
+
+.contact-text h4 {
     margin: 15px 0;
-    color:rgb(80, 125, 80);
+    color: rgb(80, 125, 80);
     font-size: 40px;
     font-weight: 600;
     font-family: 'Georgia', serif;
     padding-top: 60px;
-   
+
 
 }
 
-.contact-list li{
+.contact-list li {
     margin-bottom: 10px;
     display: block;
 }
-.contact-list i{
+
+.contact-list i {
     display: inline-block;
     color: darkgreen;
     font-size: 30px;
     font-weight: 600;
     transition: all 40s ease;
-       
+
 }
-.contact-list i a:hover{
-    transform:scale(1.01) translateY(-5px);
+
+.contact-list i a:hover {
+    transform: scale(1.01) translateY(-5px);
     color: darkgreen;
 }
-.contact-icons a i{
+
+.contact-icons a i {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -371,17 +386,21 @@ a.active
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
-    
+
 }
-.contact-icons i:hover{
-  background: darkgreen;
-  color: black;
+
+.contact-icons i:hover {
+    background: darkgreen;
+    color: black;
 }
-.contact-form form{
+
+.contact-form form {
     position: relative;
 
 }
-.contact-form form input,form textarea{
+
+.contact-form form input,
+form textarea {
     border: none;
     outline: none;
     width: 50%;
@@ -393,32 +412,33 @@ a.active
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
 }
-.contact-form textarea{
+
+.contact-form textarea {
     resize: none;
     height: 100px;
 }
-.contact-form form .send{
-    display: inline-block;
-    padding: 14px 60px;
-    background: darkgreen;
-    border-radius: 40px;
-    font-size: 18px;
+
+.contact-form form button {
+    border: none;
+    outline: none;
+    width: 50%;
+    padding: 15px;
+    background: rgb(88, 167, 91);
     color: black;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    /* opacity: ; */
-    animation: sideTop is ease forwards;
-    animation-delay: 2s;
- 
+    font-size: 1rem;
+    font-weight: 600px;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
 }
 
-#skills{
+#skills {
     height: 100vh;
 }
-#about{
-    height: 100vh   ;
+
+#about {
+    height: 100vh;
 }
-#contact{
+
+#contact {
     height: 100vh;
 }
