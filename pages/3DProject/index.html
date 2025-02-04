@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    
+    <style>
+        body{
+            /* background: linear-gradient(rgb(189, 140, 140),rgb(25, 23, 23)); */
+            background-color: black;
+        }
+        .img {
+            height: 350px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            
+        }
+        .container {
+            width: 200px;
+            height: 350px;
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+            animation: gallery 30s linear infinite;
+        }
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: center;
+            transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+        }
+        @keyframes gallery {
+            0% { transform: perspective(1000px) rotateY(0deg); }
+            100% { transform: perspective(1000px) rotateY(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span style="--i:1"><img class="img" src="/asstes/image/1ea70d70-90d2-4ad3-a1ce-462ea595f383.jpg" alt=""></span>
+        <span style="--i:2"><img class="img" src="/asstes/image/2023 Kerala Adventure_ Nature, Culture, and Beyond.jpg" alt=""></span>
+        <span style="--i:3"><img class="img" src="/asstes/image/43799b0c-8fc8-4f3d-a425-4cb7c899d84d.jpg" alt=""></span>
+        <span style="--i:4"><img class="img" src="/asstes/image/94428507-89af-4f10-8ab1-54cd849188bb.jpg" alt=""></span>
+        <span style="--i:5"><img class="img" src="/asstes/image/b59bc74e-120f-4fde-8de2-7740f5bd3b32.jpg" alt=""></span>
+        <span style="--i:6"><img class="img" src="/asstes/image/fddf75e1-a81c-47e2-9b33-b02fab26bd1a.jpg" alt=""></span>
+        <!-- <span style="--i:7"><img class="img" src="/asstes/image/Brown and White Minimalist Fashion Presentation.jpg" alt=""></span> -->
+        <span style="--i:7"><img class="img" src="/asstes/image/43799b0c-8fc8-4f3d-a425-4cb7c899d84d.jpg" alt=""></span>
+        <span style="--i:8"><img class="img" src="/asstes/image/94428507-89af-4f10-8ab1-54cd849188bb.jpg" alt=""></span>
+        <span style="--i:9"><img class="img" src="/asstes/image/b59bc74e-120f-4fde-8de2-7740f5bd3b32.jpg" alt=""></span>
+        <span style="--i:10"><img class="img" src="/asstes/image/fddf75e1-a81c-47e2-9b33-b02fab26bd1a.jpg" alt=""></span>
+       
+    </div>
+</body>
+</html>
